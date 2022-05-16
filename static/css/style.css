@@ -1,0 +1,265 @@
+header {
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: white;
+  margin: auto;
+  width: 100%;
+  background-color: rgb(12, 64, 112);
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: black;
+  background-color: #ddd;
+  padding: 0.25em;
+  font-size: medium;
+}
+
+.important {
+  color: red;
+} 
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.main {
+  margin-bottom: 5px;
+}
+
+caption {
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(12, 64, 112);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  font-weight: bold;
+  min-width: 200px;
+}
+  
+td.main {
+  text-align: center;
+  border: 1px solid #1E5735;
+  background-color: rgb(18, 130, 235);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  width: 15em;
+  cursor: pointer;
+}
+
+td.main:hover {
+  opacity: 0.8;
+}
+
+button {
+  padding: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button.searchButton {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 5px;
+}
+
+input.likeButton {
+  padding: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 5px;
+}
+
+input.likeButton:hover {
+  background-color: #ddd;
+}
+
+.informationTableData {
+  text-align: center;
+  border: 1px solid #1E5735;
+  background-color: rgb(16, 189, 74);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  width: 15em;
+  cursor: auto;
+}
+
+h3 {
+  font-style: italic;
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(18, 130, 235);;
+  text-align: center;
+  padding: 0.1em;
+  margin-bottom: 0.5em;
+}
+
+nav.sources {
+  padding: 1em;
+}
+
+article.sources {
+  text-align: center;
+  font-weight: bold;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+h6 {
+  color: white;
+}
+
+input[type=text] {
+  width: 20%;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+input[type=text]:hover {
+  opacity: 0.9;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: white;
+  margin: auto;
+  width: 100%;
+  background-color: rgb(12, 64, 112);
+}
+
+  
+
+
+/* Input forms */
+
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form */
+.open-button {
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  font-weight: bold;
+}
+
+/* Hover effect for open button */
+.open-button:hover {
+  background-color: rgb(7, 71, 145);
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  background-color: rgb(12, 64, 112);
+  color: white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 450px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Input fields */
+.form-container input[type=text] {
+  width: 100%;
+  padding:10px;
+  margin: 0 0 8px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus*/
+.form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Style for the save button */
+.form-container .btn {
+  background-color: rgb(65, 196, 69);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* Responsive design */
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+}
